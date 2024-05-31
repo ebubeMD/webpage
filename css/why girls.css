@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --animate-color: #ff2770;
+}
+
+.sec1 {
+    padding: 20px 130px;
+}
+
+.banner {
+    height: 600px;
+    background-image: url(../images/why\ girls.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.sec1 article {
+    margin-top: 25px;
+    padding: 10px;
+    color: var(--text-color);
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec1 article h3 {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.sec1 article p {
+    color: var(--text-color);
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.sec1 article ul {
+    list-style-type: square;
+    margin-left: 15px;
+}
+
+.sec1 article ul li {
+    margin: 15px 0;
+}
+
+.sec1 article ul li:first-child,
+.sec1 article ul li:last-child {
+    margin: 0;
+}
+
+.sec1 .image,
+.sec1 .image2,
+.sec1 .image3 {
+    height: 600px;
+    margin-top: 40px;
+    background-image: url(../images/why\ girls2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.sec1 .image2 {
+    background-image: url(../images/why\ girls3.jpg);
+    background-position: 0 0;
+}
+
+.sec1 article .listed {
+    list-style-type: circle;
+    list-style: radial-gradient(var(--main-color), var(--animate-color), var(--second-bg-color), var(--animate-color));
+}
+
+.sec1 article .listed li {
+    margin: 15px 0;
+    padding: 5px 0;
+}
+
+.sec1 .image3 {
+    background-image: url(../images/why\ girls4.jpg);
+}
+
+@media (max-width:1200px) {
+    .sec1 {
+        padding: 20px 80px;
+    }
+
+    .sec1 article {
+        width: 100%;
+    }
+}
+
+@media (max-width:975px) {
+    .sec1 {
+        padding: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .banner {
+        height: 400px;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .sec1 article {
+        text-align: start;
+    }
+
+    .sec1 .image,
+    .sec1 .image2,
+    .sec1 .image3 {
+        height: 400px;
+    }
+}
+
+@media (max-width:500px) {
+    .sec1 {
+        padding: 20px 10px;
+    }
+
+    .sec1 article {
+        padding: 5px;
+    }
+}
+
+@media (max-width:430px) {
+    .banner {
+        height: 300px;
+    }
+
+    .sec1 .image,
+    .sec1 .image2,
+    .sec1 .image3 {
+        height: 200px;
+    }
+    .banner h1 {
+        font-size: 1.7rem;
+        color: var(--text-color);
+    }
+}
+
+@media (max-width:350px) {
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+    
+    .sec1 article p {
+        text-align: center;
+    }
+}
+
+@media (max-width:315px) {
+    .banner h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:310px) {
+
+    .sec1 article h3 {
+        text-align: center;
+    }
+}

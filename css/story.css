@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --animate-color: #ff2770;
+}
+
+.home-banner {
+    background: var(--bg-color);
+}
+
+.home-banner .write-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 140px 0;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.home-banner .write-up h2 {
+    font-size: 2.5rem;
+}
+
+.home-banner .write-up p {
+    font-size: 1.2rem;
+}
+
+.sect1, .sect2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 100px 40px;
+}
+
+.sect1 .img-box,
+.sect2 .img-box {
+    width: 100%;
+    height: 450px;
+    box-shadow: 0 0 5px var(--main-color);
+    border-radius: 10px;
+}
+
+.sect1 .img-box img,
+.sect2 .img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sect1 .text,
+.sect2 .text {
+    width: 100%;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.sect1 .text h3,
+.sect2 .text h3 {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.sect1 .text p,
+.sect2 .text p {
+    color: var(--text-color);
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.sect2 {
+    background: var(--bg-color);
+}
+
+.sect2 .img-box {
+    width: 100%;
+    height: 700px;
+}
+
+.sect2 .img-box h3 {
+    color: var(--text-color);
+}
+
+.sect2 .text button {
+    width: 50%;
+}
+
+@media (max-width:1280px) {
+    .sect1, .sect2 {
+        grid-template-columns: 1fr;
+    }    
+
+    .sect1 .img-box {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    }
+
+    .sect2 .img-box {
+    margin: auto;
+    width: 90%;
+    height: 900px;
+    }
+}
+
+@media (max-width:1000px) {
+    .home-banner .write-up {
+        padding: 80px 0;
+        width: 80%;
+    }
+    
+    .home-banner .write-up p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:850px) {
+    .sect1 .text,
+    .sect2 .text {
+    padding: 20px 10px;
+    }
+
+    .sect1 .img-box {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .sect2 .img-box {
+        width: 100%;
+        height: 900px;
+    }
+}
+
+@media (max-width:600px) {
+    .sect1 .text,
+    .sect2 .text {
+    padding: 10px 10px;
+    }
+
+    .sect1, .sect2 {
+        padding: 80px 10px;
+    }
+
+    .sect1 .img-box {
+        height: 400px;
+    }
+    
+    .sect2 .img-box {
+        height: 700px;
+    }
+}
+
+@media (max-width:550px) {
+    .home-banner .write-up {
+        padding: 60px 5px;
+        width: 100%;
+    }
+    
+    .home-banner .write-up p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:500px) {
+    .home-banner .write-up p {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .sect1 .text h3,
+    .sect2 .text h3 {
+    text-align: center;
+    }
+
+    .sect1 .text p,
+    .sect2 .text p {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    }
+
+    .sect2 .text .btn {
+    text-align: center;
+    }
+
+    .sect1 .img-box {
+        height: 300px;
+    }
+    
+    .sect2 .img-box {
+        height: 500px;
+    }
+}
+
+@media (max-width:450px) {
+    .home-banner .write-up {
+        padding: 30px 5px;
+    }
+
+    .home-banner .write-up p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:395px) {
+    .home-banner .write-up {
+        padding: 20px 5px;
+    }
+
+    .sect1 .text,
+    .sect2 .text {
+    padding: 5px;
+    }
+
+    .sect1, .sect2 {
+        padding: 60px 5px;
+    }
+
+    .sect1 .text h3,
+    .sect2 .text h3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    }
+
+    .sect2 .text button {
+        width: 80%;
+    }
+}
+
+@media (max-width:350px) {
+    .home-banner .write-up {
+        padding: 15px 5px;
+        gap: 0;
+    }
+
+    .home-banner .write-up h2 {
+        font-size: 2rem;
+    }
+
+    .home-banner .write-up p {
+        font-size: 0.7rem;
+    }
+
+    .sect1, .sect2 {
+        padding: 50px 5px;
+    }
+
+    .sect2 .text button {
+        width: 90%;
+    }
+
+    .sect1 .img-box {
+        height: 200px;
+    }
+    
+    .sect2 .img-box {
+        height: 400px;
+        padding: 20px 0;
+    }
+}

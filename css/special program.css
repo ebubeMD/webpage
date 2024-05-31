@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --animate-color: #ff2770;
+    --height: calc(100vh - 93.2986px);
+}
+
+.home-banner {
+    padding: 220px 0;
+    background-image: url(../images/why\ girls4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-banner h1 {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 800;
+    font-size: 3.4rem;
+}
+
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    background: var(--second-bg-color);
+    padding: 0px 50px;
+    height: var(--height);
+}
+
+.sec1 .write-up,
+.sec2 .write-up,
+.sec3 .write-up,
+.sec4 .write-up {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sec1 .write-up article,
+.sec2 .write-up article,
+.sec3 .write-up article,
+.sec4 .write-up article {
+    margin-top: 5px;
+    padding: 5px;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.sec1 .write-up article h3,
+.sec2 .write-up article h3,
+.sec3 .write-up article h3,
+.sec4 .write-up article h3 {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.sec1 .write-up article p,
+.sec2 .write-up article p,
+.sec3 .write-up article p,
+.sec4 .write-up article p {
+    color: var(--text-color);
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.sec1 .write-up article p a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.sec1 .image,
+.sec2 .image,
+.sec3 .image,
+.sec4 .image {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px;
+}
+
+.sec1 .image img,
+.sec2 .image img,
+.sec3 .image img,
+.sec4 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+section:nth-child(even) {
+    background: var(--bg-color);
+}
+
+section:nth-child(odd) {
+    background: var(--second-bg-color);
+}
+
+@media (max-width: 1350px) {
+    .sec1,
+    .sec2,
+    .sec3,
+    .sec4 {
+        grid-template-columns: 1fr;
+        padding: 50px;
+        height: fit-content;
+    }
+
+    .sec1 .write-up,
+    .sec2 .write-up,
+    .sec3 .write-up,
+    .sec4 .write-up {
+        width: 80%;
+        margin: auto;
+    }
+
+    .sec1 .image,
+    .sec2 .image,
+    .sec3 .image,
+    .sec4 .image {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1050px) {
+    .sec1 .write-up,
+    .sec2 .write-up,
+    .sec3 .write-up,
+    .sec4 .write-up {
+        width: 90%;
+    }
+
+    .sec1 .image,
+    .sec2 .image,
+    .sec3 .image,
+    .sec4 .image {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-banner {
+        padding: 120px 0;
+    }
+
+    .sec1,
+    .sec2,
+    .sec3,
+    .sec4 {
+        padding: 50px 20px;
+    }
+
+    .sec1 .write-up,
+    .sec2 .write-up,
+    .sec3 .write-up,
+    .sec4 .write-up {
+        width: 100%;
+    }
+
+    .sec1 .image,
+    .sec2 .image,
+    .sec3 .image,
+    .sec4 .image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-banner h1 {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .sec1 .write-up article h3,
+    .sec2 .write-up article h3,
+    .sec3 .write-up article h3,
+    .sec4 .write-up article h3 {
+        color: var(--main-color);
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .sec1 .image,
+    .sec2 .image,
+    .sec3 .image,
+    .sec4 .image {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    .home-banner {
+        padding: 100px 0;
+    }
+
+    .home-banner h1 {
+        font-size: 2.8rem;
+    }
+
+    .sec1 .write-up article h3,
+    .sec2 .write-up article h3,
+    .sec3 .write-up article h3,
+    .sec4 .write-up article h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .sec1 .write-up article p,
+    .sec2 .write-up article p,
+    .sec3 .write-up article p,
+    .sec4 .write-up article p {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    .sec1 .image,
+    .sec2 .image,
+    .sec3 .image,
+    .sec4 .image {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .sec1,
+    .sec2,
+    .sec3,
+    .sec4 {
+        padding: 30px 10px;
+    }
+
+    .sec1 .write-up article,
+    .sec2 .write-up article,
+    .sec3 .write-up article,
+    .sec4 .write-up article {
+        padding: 0;
+    }
+
+    .sec1 .write-up article p,
+    .sec2 .write-up article p,
+    .sec3 .write-up article p,
+    .sec4 .write-up article p {
+        text-align: center;
+    }
+
+    .sec1 .image,
+    .sec2 .image,
+    .sec3 .image,
+    .sec4 .image {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 410px) {
+    .sec1,
+    .sec2,
+    .sec3,
+    .sec4 {
+        padding: 30px 5px;
+    }
+}
+
+@media (max-width: 350px) {
+    .home-banner h1 {
+        font-weight: 600;
+        font-size: 2.3rem;
+    }
+
+    .sec1 .image,
+    .sec2 .image,
+    .sec3 .image,
+    .sec4 .image {
+        width: 100%;
+        height: 230px;
+    }
+}
